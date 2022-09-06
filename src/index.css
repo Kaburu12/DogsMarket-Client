@@ -162,3 +162,37 @@ body {
       background-color: #666666;
       transition-duration: 1.2ms;
       }
+
+      #health-container{
+        background-image: url(../public/health-back.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        margin: 0; 
+        }
+        
+        .health-section{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 150px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        }
+        
+        .left-section{
+        text-align: center;
+        color: #58BA46;
+        padding-top: 150px;
+        font-weight: 600;
+        font-size: 17px;
+        }
+        
+        .left-section h2{
+        color: #fff;
+        }
+        
+        .right-section{
+        padding-top:80px ;
+        }
