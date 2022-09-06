@@ -12,7 +12,35 @@ const DogList = () => {
           <h4>We'll deliver to you freely and offer free medical checkup</h4>
         </div>
       </header>
-
+      <main>
+        <div className="dogcards-container">
+         <div id="dogsale-btn"><button>Dogs For Sale</button> </div> 
+          <div className="dogcards">
+          <div id="dogcard">
+            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
+            <h4> Pomeranian</h4>
+            <h5>ksh.20,000</h5>
+            </div>
+            <div id="dogcard">
+            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
+            <h4> Pomeranian</h4>
+            <h5>ksh.20,000</h5>
+            </div>
+            <div id="dogcard">
+            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
+            <h4> Pomeranian</h4>
+            <h5>ksh.20,000</h5>
+            </div>
+            <div id="dogcard">
+            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
+            <h4> Pomeranian</h4>
+            <h5>ksh.20,000</h5>
+            </div>
+          </div>
+          <div id="sell-btn"><button> Click To Sell Your Dog</button>
+          </div> 
+        </div>
+</main>
 		</div>
 	 );
 }

@@ -268,10 +268,73 @@ color: #fff;
           text-align: center;
           font-weight: 900;
           color: #58BA46;
+          
         }
 
         #heading{
           background-color: #000;
           padding-top: 20px;
           padding-bottom: 20px;
+        }
+
+        #dogsale-btn{
+          font-size: 2.3rem;
+          text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+
+        }
+.dogcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ #dogcard{
+  text-align: center;
+  width: 24%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.8rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #b7b7b7;
+  margin: 1px;
+        }
+     #dogcard:hover {
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+          opacity: 0.8;
+          -webkit-transition: opacity 800ms ease-in-out 0s;
+          transition: opacity 800ms ease-in-out 0s;
+          -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+          transition: -webkit-transform 1s ease-in-out 0s;
+          transition: transform 1s ease-in-out 0s;
+          transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+        }
+
+        #dogcard img {
+          width: 100%;
+          height: auto;
+        }
+
+        #dogsale-btn button{
+          background-color: #D1487B;
+          color: #fff;
+          padding: 1.5rem 3.0rem 1.5rem 3.0rem;
+        }
+
+        #sell-btn{
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        
+        }
+
+        #sell-btn button{
+          padding: 1.5rem 4.5rem 1.5rem 4.5rem;
+          color: #fff;
+          background-color:#104d06;
+          font-size: 1.8rem;
         }
