@@ -83,6 +83,22 @@ const Home = () => {
         <button id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
       </section>
 
+      <section id="health-container" >
+<div className="health-section" >
+  <div className="left-section">
+  <h2>Free Health Check</h2>
+    <p>At Dogs Market, we take our responsibilities regarding the health and well- <br /> being of your puppy very seriously. <br />
+All of our puppies visit a qualified, registered veterinarian prior to their delivery <br /> where they are health-checked, tested, given their first vaccination, de-wormed, <br /> treated to prevent parasites.  <br />
+No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br /> that you receive your puppy in perfect health.</p>
+    <button> ➲ Contact Us</button>
+ 
+  </div>
+  <div className="right-section">
+  <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/209707.jpg" alt="vetrinary-img" />
+  </div>
+</div>
+</section>
+
  
 
 
