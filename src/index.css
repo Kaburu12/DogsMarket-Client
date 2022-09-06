@@ -207,3 +207,11 @@ body {
           margin-left: 50px;
           color: #cf5898;
         }
+
+        #footer{
+          background-color: #2C2C2C;
+          color: #fff;
+          padding: 20px;
+          font-size: 14px;
+          text-align: center;
+        }

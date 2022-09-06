@@ -105,8 +105,9 @@ No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br
 
 <section>
   <footer id="footer">
-          <p>FOOTER</p>
+          <p>infor@dogmarket.co.ke</p>
           <p>Designed by : Michael Kaburu</p>
+          <p>contact : +254796225100</p>
 </footer>
 </section>
   
