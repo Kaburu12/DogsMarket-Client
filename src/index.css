@@ -155,7 +155,7 @@ body {
     color: #ffffff;
     font-size: 20px;
     border-width: 3px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     }
 
     #leave-comment:hover{
@@ -175,7 +175,7 @@ body {
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        margin-top: 150px;
+        margin-top: 30px;
         padding-left: 40px;
         padding-right: 40px;
         
@@ -195,4 +195,15 @@ body {
         
         .right-section{
         padding-top:80px ;
+        }
+
+        .review-bottom{
+          display: flex;
+          padding-top: 40px;
+          justify-content: space-between;
+        }
+
+        .review-bottom h2{
+          margin-left: 50px;
+          color: #cf5898;
         }

@@ -80,7 +80,11 @@ const Home = () => {
             <p>Day care dog services <br /> offered here are the best </p>
           </div>
         </div>
+        <div className="review-bottom">
+          <h2>We Find Best Suitable Dog For Your Home</h2>
         <button id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
+        </div>
+       
       </section>
 
       <section id="health-container" >
@@ -99,8 +103,13 @@ No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br
 </div>
 </section>
 
- 
-
+<section>
+  <footer id="footer">
+          <p>FOOTER</p>
+          <p>Designed by : Michael Kaburu</p>
+</footer>
+</section>
+  
 
     
 </div>
