@@ -238,3 +238,40 @@ body {
           background-color: #666666;
           transition-duration: 1.2ms;
         }
+
+        #doglist-header{
+          background-image: url(../public/german.jpg);
+          background-size: cover;
+      background-position: center;
+      opacity: inherit;
+      height: 70vh;
+      margin: 0; 
+      text-align: center;
+      color: #fff;
+      padding-top: 200px;
+      font-size: x-large;
+      text-decoration: solid;
+    
+        }
+
+.doglist-container{
+  padding-top: 30px;
+}
+
+        #doglist-header div{
+float: right;
+padding-right: 30px;
+color: #fff;
+        }
+
+        .doglist-container h3{
+          text-align: center;
+          font-weight: 900;
+          color: #58BA46;
+        }
+
+        #heading{
+          background-color: #000;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
