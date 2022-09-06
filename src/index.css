@@ -116,3 +116,44 @@ body {
         padding-right: 2.0rem;
         }
         
+          
+  .review-container{
+    display: flex;
+    justify-content: center;
+    background-color: #D2D2CF;
+    
+    }
+    
+    .review-container div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 1.5rem 1.5rem 1.5rem;
+    }
+    hr{
+    color: #000;
+    height: 5px;
+    
+    }
+    
+    .review-head{
+    color: #F6453C;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+    
+    #leave-comment{
+    margin-right:60px;
+    padding: 1.0rem 2.2rem 1.0rem 2.2rem;
+    float: right;
+    border-radius:0px 20px 0px 0px;
+    border-color: #666666;
+    background-color: #58BA46;
+    color: #ffffff;
+    font-size: 20px;
+    border-width: 3px;
+    margin-top: 30px;
+    }
