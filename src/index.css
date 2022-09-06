@@ -157,3 +157,8 @@ body {
     border-width: 3px;
     margin-top: 30px;
     }
+
+    #leave-comment:hover{
+      background-color: #666666;
+      transition-duration: 1.2ms;
+      }
