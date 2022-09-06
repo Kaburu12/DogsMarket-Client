@@ -9,7 +9,7 @@ const Home = () => {
 <header></header>
 <section className="section-one">
   <div className="bar">
-    <h2>Get Your Dream Super Breed Dog With Us</h2>
+    <h2>Get Your Dream Super Dog With Us</h2>
     <div className="icons-container">
       <div className="icon-items">
         <img src="" alt="" />
@@ -54,7 +54,7 @@ const Home = () => {
           <div>
             <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgzOoeWAe9w4YTYMye3LNwVWU2QVptuu07w&usqp=CAU" alt="profile" />
             <p>Client: Jane White</p>
-            <img style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
+            <img  style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
             <p>post/review</p>
             <p>I bought my chiwawa here <br /> and it's now 3 years old.Thank you </p>
           </div>
@@ -94,7 +94,7 @@ const Home = () => {
     <p>At Dogs Market, we take our responsibilities regarding the health and well- <br /> being of your puppy very seriously. <br />
 All of our puppies visit a qualified, registered veterinarian prior to their delivery <br /> where they are health-checked, tested, given their first vaccination, de-wormed, <br /> treated to prevent parasites.  <br />
 No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br /> that you receive your puppy in perfect health.</p>
-    <button> ➲ Contact Us</button>
+   <a href=""> <button id="contact-us"> ➲ Contact Us</button></a>
  
   </div>
   <div className="right-section">
@@ -105,7 +105,7 @@ No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br
 
 <section>
   <footer id="footer">
-          <p>infor@dogmarket.co.ke</p>
+          <p>infor@dogsmarket.co.ke</p>
           <p>Designed by : Michael Kaburu</p>
           <p>contact : +254796225100</p>
 </footer>

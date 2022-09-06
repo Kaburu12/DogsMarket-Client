@@ -56,7 +56,7 @@ body {
     
     nav ul li {
     display: inline-block;
-     margin-right: 8%;
+     margin-right: 6%;
     text-align: center;
     }
     
@@ -73,7 +73,9 @@ body {
     
     nav ul li a:hover {
     color: #D1487B;
-    
+    background-color: #F2F2F2;
+    padding: 5px;
+  border-radius: 10px;
     }
 
     header{
@@ -130,6 +132,12 @@ body {
     align-items: center;
     padding: 1.6rem 1.5rem 1.5rem 1.5rem;
     }
+
+.review-container div img:hover{
+  cursor: pointer;
+  transition-duration: 1.2ms;
+}
+
     hr{
     color: #000;
     height: 5px;
@@ -209,9 +217,24 @@ body {
         }
 
         #footer{
-          background-color: #2C2C2C;
+          background-color: #F6453C;
           color: #fff;
           padding: 20px;
           font-size: 14px;
           text-align: center;
+        }
+
+        #contact-us{
+          padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+          margin-top: 20px;
+          background-color: #D1487B;
+          border-style: none;
+          font-size: 1.9rem;
+          color: #ffffff;
+          border-radius: 10px;
+        }
+
+        #contact-us:hover{
+          background-color: #666666;
+          transition-duration: 1.2ms;
         }
