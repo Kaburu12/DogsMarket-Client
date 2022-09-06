@@ -106,3 +106,13 @@ body {
       text-align: center;
       }
       
+      .icons-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .icon-items{
+        padding-left: 2.0rem;
+        padding-right: 2.0rem;
+        }
+        
