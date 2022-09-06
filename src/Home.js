@@ -48,7 +48,42 @@ const Home = () => {
         <hr />
 </section> 
 
-      
+<section id="reviews">
+        <p className="review-head">Site Reviews & posts</p>
+        <div className="review-container">
+          <div>
+            <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgzOoeWAe9w4YTYMye3LNwVWU2QVptuu07w&usqp=CAU" alt="profile" />
+            <p>Client: Jane White</p>
+            <img style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
+            <p>post/review</p>
+            <p>I bought my chiwawa here <br /> and it's now 3 years old.Thank you </p>
+          </div>
+          <div>
+            <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQall9DVYi-j82ZvcO95EiAEAhYuFeQim39tA&usqp=CAU" alt="profile" />
+            <p>Seller: Mike Kaburu</p>
+            <img style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
+            <p>post/review</p>
+            <p>German Shepherd <br /> 6 months old @ksh.30,000 </p>
+          </div>
+          <div>
+            <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlFTdul-opDBqmtFZhXAPHu7qkheNMtKiuw&usqp=CAU" alt="profile" />
+            <p>Dog day care</p>
+            <img style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
+            <p>post/review</p>
+            <p>6 hours dog day care <br /> @ksh. 600 </p>
+          </div>
+          <div>
+            <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjIN8RdzndtF1P2F5ewNZkDN156gMxpbpVqQ&usqp=CAU" alt="profile" />
+            <p>Client: Mercy Muthoni</p>
+            <img style={{ width: "20%", height: "7%"}} src="https://static.vecteezy.com/system/resources/thumbnails/007/498/655/small/yellow-five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-illustration-vector.jpg" alt="" />
+            <p>post/review</p>
+            <p>Day care dog services <br /> offered here are the best </p>
+          </div>
+        </div>
+        <button id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
+      </section>
+
+ 
 
 
     
