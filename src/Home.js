@@ -20,6 +20,7 @@ const Home = () => {
         <p>Free Medical Check-up</p>
       </div>
       <div className="icon-items">
+
         <img src="" alt="" />
         <p>Dog Grooming</p>
        </div>
@@ -94,8 +95,8 @@ const Home = () => {
     <p>At Dogs Market, we take our responsibilities regarding the health and well- <br /> being of your puppy very seriously. <br />
 All of our puppies visit a qualified, registered veterinarian prior to their delivery <br /> where they are health-checked, tested, given their first vaccination, de-wormed, <br /> treated to prevent parasites.  <br />
 No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br /> that you receive your puppy in perfect health.</p>
-   <a href=""> <button id="contact-us"> ➲ Contact Us</button></a>
- 
+   <button  id="contact-us"> ➲ Contact Us</button>
+
   </div>
   <div className="right-section">
   <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/209707.jpg" alt="vetrinary-img" />
