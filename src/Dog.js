@@ -23,3 +23,4 @@ const Dog = ({ dog, name, image, price ,onDeleteDog}) => {
 };
 
 export default Dog;
+
