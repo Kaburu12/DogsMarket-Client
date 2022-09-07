@@ -1,6 +1,30 @@
-import React from "react";
 
-const DogList = () => {
+import React,{ useState} from "react";
+import Dog from "./Dog"
+import DogForm from "./DogForm";
+
+const DogList = ({ dogBreeds, onDeleteDog, onAddDog }) => {
+
+  const [ showForm, setShowForm ] = useState(false)
+
+  const productsArray = dogBreeds.map((dog) => {
+    return (
+      <Dog
+        dog={dog}
+        key={dog.id}
+        name={dog.name}
+        image={dog.image}
+        price={dog.price}
+        onDeleteDog={onDeleteDog}
+        
+      />
+    );
+  });
+  // a fucntion to hide/show form to submit posts
+  function handleShowForm() {
+    setShowForm((showForm) => !showForm)
+  }
+  
 
   return (
     <div className="doglist-container">
@@ -14,33 +38,21 @@ const DogList = () => {
       </header>
       <main>
         <div className="dogcards-container">
-         <div id="dogsale-btn"><button>Dogs For Sale</button> </div> 
+          <div id="dogsale-btn"><button>Dogs For Sale</button> </div> 
           <div className="dogcards">
-          <div id="dogcard">
-            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
-            <h4> Pomeranian</h4>
-            <h5>ksh.20,000</h5>
-            </div>
-            <div id="dogcard">
-            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
-            <h4> Pomeranian</h4>
-            <h5>ksh.20,000</h5>
-            </div>
-            <div id="dogcard">
-            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
-            <h4> Pomeranian</h4>
-            <h5>ksh.20,000</h5>
-            </div>
-            <div id="dogcard">
-            <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/pomeranian.jpg" />
-            <h4> Pomeranian</h4>
-            <h5>ksh.20,000</h5>
-            </div>
+          {productsArray}
           </div>
-          <div id="sell-btn"><button> Click To Sell Your Dog</button>
+          <div id="sell-btn"><button onClick={handleShowForm}> Click To Sell Your Dog</button>
+          {showForm=== true ?  <DogForm onAddDog={onAddDog}/>  : null}
           </div> 
+
         </div>
-</main>
+      </main>
+      <footer id="footer">
+          <p>infor@dogsmarket.co.ke</p>
+          <p>Designed by : Michael Kaburu</p>
+          <p>contact : +254796225100</p>
+</footer>
 		</div>
 	 );
 }
