@@ -3,7 +3,7 @@ import React,{ useState} from "react";
 import Dog from "./Dog"
 import DogForm from "./DogForm";
 
-const DogList = ({ dogBreeds, onDeleteDog, onAddDog }) => {
+const DogList = ({ dogBreeds, onDeleteDog, onAddDog ,onUpdateDog}) => {
 
   const [ showForm, setShowForm ] = useState(false)
 
@@ -16,7 +16,7 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog }) => {
         image={dog.image}
         price={dog.price}
         onDeleteDog={onDeleteDog}
-        
+        onUpdateDog={onUpdateDog}
       />
     );
   });
@@ -43,7 +43,7 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog }) => {
           {productsArray}
           </div>
           <div id="sell-btn"><button onClick={handleShowForm}> Click To Sell Your Dog</button>
-          {showForm=== true ?  <DogForm onAddDog={onAddDog}/>  : null}
+          {showForm=== true ?  <DogForm onAddDog={onAddDog} />  : null}
           </div> 
 
         </div>

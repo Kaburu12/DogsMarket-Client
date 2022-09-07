@@ -17,6 +17,18 @@ function App() {
         .then((dogs) => setDogs(dogs));
     }, []);
   
+   // add this callback function to update dogs
+ function handleUpdateDog(updatedDog) {
+  const updatedDogs = dogs.map((dog) => {
+    if (dog.id === updatedDog.id) {
+      return updatedDog;
+    } else {
+      return dog;
+    }
+  });
+  setDogs(updatedDogs);
+ }
+  
     function handleDeleteDog(deleteDog) {
       const updatedDogs = dogs.filter((dog) => dog.id !== deleteDog.id);
     setDogs(updatedDogs);
@@ -36,7 +48,11 @@ function App() {
     <div>
     <NavBar />
     <Routes>
-      <Route path="/doglist" element={<DogList onAddDog={handleAddDog}   dogBreeds={dogs} onDeleteDog={ handleDeleteDog} />}/>
+        <Route path="/doglist" element={<DogList onAddDog={handleAddDog}
+          dogBreeds={dogs}
+          onDeleteDog={handleDeleteDog}
+          onUpdateDog={handleUpdateDog}
+        />} />
       <Route path="/doglist" element={<DogList />}/>
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services/>} />

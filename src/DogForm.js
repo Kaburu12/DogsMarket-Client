@@ -27,6 +27,9 @@ const DogForm = ({ onAddDog }) => {
       .then((r) => r.json())
       //new posted dog
       .then((newDog) => onAddDog(newDog));
+    
+    
+    
   }
   return (
     <div>
