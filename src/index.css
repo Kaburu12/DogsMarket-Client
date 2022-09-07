@@ -399,3 +399,20 @@ height:350px;
 padding: 20px;
 
 }
+
+.services-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.services-btn button{
+  padding: 1.5rem 3.0rem 1.5rem 3.0rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  background-color: #D1487B;
+  color: #fff;
+}
