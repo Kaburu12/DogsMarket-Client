@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 const DogForm = ({ onAddDog }) => {
-  //usestate return order item values that hold the state values to be posted
+  //constant values that hold the state values to be posted
   const [image, setImage] = useState("");
   const [breed, setBreed] = useState("");
   const [price, setPrice] = useState("");
@@ -11,7 +11,7 @@ const DogForm = ({ onAddDog }) => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    //a constant that holds new order data to be posted
+    //a constant that holds new dog data to be posted
     const dogCard = {
       image: image,
       breed: breed,
@@ -19,7 +19,7 @@ const DogForm = ({ onAddDog }) => {
     };
 
     //posting dog data using our fetch API
-    fetch("https://server-app123.herokuapp.com/products", {
+    fetch("http://localhost:9292/dogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dogCard),

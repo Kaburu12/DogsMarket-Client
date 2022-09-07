@@ -329,7 +329,6 @@ margin-bottom: 20px;
 }
  #dogcard{
   text-align: center;
-  /* width: 24%; */
   display: inline-block;
   font-size: 16px;
   text-align: center;
@@ -383,3 +382,20 @@ margin-bottom: 20px;
           margin-bottom: 5px;
         }
 
+.services-container{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.services-container div{
+  text-align: center;
+}
+
+.services-container div img{
+width:300px;
+height:350px;
+padding: 20px;
+
+}

@@ -11,8 +11,9 @@ function App() {
   const [dogs, setDogs] = useState([]);
 
     //fectching dogs to be displayed
+    // https://server-app123.herokuapp.com/products
     useEffect(() => {
-      fetch("https://server-app123.herokuapp.com/products")
+      fetch("http://localhost:9292/dogs")
         .then((res) => res.json())
         .then((dogs) => setDogs(dogs));
     }, []);

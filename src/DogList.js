@@ -12,7 +12,7 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog ,onUpdateDog}) => {
       <Dog
         dog={dog}
         key={dog.id}
-        name={dog.name}
+        breed={dog.breed}
         image={dog.image}
         price={dog.price}
         onDeleteDog={onDeleteDog}
@@ -32,7 +32,7 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog ,onUpdateDog}) => {
       <header id="doglist-header">
         <div>
           <h3>Buy the breed of your choice </h3> 
-          <h4>as low as ksh. 7,000 💵</h4>
+          <h4>as low as ksh. 10,000 💵</h4>
           <h4>We'll deliver to you freely and offer free medical checkup</h4>
         </div>
       </header>
