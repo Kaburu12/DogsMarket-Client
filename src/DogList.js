@@ -1,8 +1,9 @@
+
 import React,{ useState} from "react";
 import Dog from "./Dog"
 import DogForm from "./DogForm";
 
-const DogList = ({ dogBreeds ,onDeleteDog ,onAddDog}) => {
+const DogList = ({ dogBreeds, onDeleteDog, onAddDog }) => {
 
   const [ showForm, setShowForm ] = useState(false)
 
@@ -19,11 +20,11 @@ const DogList = ({ dogBreeds ,onDeleteDog ,onAddDog}) => {
       />
     );
   });
-// a fucntion to hide/show form to submit posts
+  // a fucntion to hide/show form to submit posts
   function handleShowForm() {
-    setShowForm((showForm)=>!showForm)
-   }
- 
+    setShowForm((showForm) => !showForm)
+  }
+  
 
   return (
     <div className="doglist-container">

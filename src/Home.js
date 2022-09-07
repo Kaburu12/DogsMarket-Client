@@ -20,7 +20,8 @@ const Home = () => {
         <p>Free Medical Check-up</p>
       </div>
       <div className="icon-items">
-        <img src="" alt=""/>
+
+        <img src="" alt="" />
         <p>Dog Grooming</p>
        </div>
       <div className="icon-items" >
@@ -95,7 +96,7 @@ const Home = () => {
 All of our puppies visit a qualified, registered veterinarian prior to their delivery <br /> where they are health-checked, tested, given their first vaccination, de-wormed, <br /> treated to prevent parasites.  <br />
 No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br /> that you receive your puppy in perfect health.</p>
    <button  id="contact-us"> ➲ Contact Us</button>
- 
+
   </div>
   <div className="right-section">
   <img src="http://www.dogsforsale.co.in/wp-content/uploads/2018/06/209707.jpg" alt="vetrinary-img" />

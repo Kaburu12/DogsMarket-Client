@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./About";
@@ -30,11 +31,13 @@ function App() {
     
   }
   
+
   return (
     <div>
     <NavBar />
     <Routes>
       <Route path="/doglist" element={<DogList onAddDog={handleAddDog}   dogBreeds={dogs} onDeleteDog={ handleDeleteDog} />}/>
+      <Route path="/doglist" element={<DogList />}/>
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services/>} />
       <Route path="/" element={<Home />} />
