@@ -1,13 +1,346 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Lato");
+*,
+*:before,
+*:after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	margin: 2 auto;
+	/* background-color: #c3def0; */
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	overflow-x: hidden;
+  }
+
+   /* styling the navbar */
+   nav {
+    background-color: #ffffff;
+    font-size: 0;
+    vertical-align: middle;
+    height: 5.6rem;
+    line-height: 6.6rem;
+    padding-left: 1.2rem;
+    }
+    
+    nav .nav-common {
+    display:flex;
+    }
+    
+    nav .logo {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    }
+    
+    #logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    }
+    
+    span {
+    color: #cf5898;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 100px;
+    }
+    
+    nav ul {
+    /* width: 100%; */
+    list-style: none;
+    font-size: 16px;
+    }
+    
+    nav ul li {
+    display: inline-block;
+     margin-right: 6%;
+    text-align: center;
+    }
+    
+    nav ul li a {
+    
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 1.0 rem;
+    text-decoration: none;
+    text-underline-position: below ;
+    
+    }
+    
+    nav ul li a:hover {
+    color: #D1487B;
+    background-color: #F2F2F2;
+    padding: 5px;
+  border-radius: 10px;
+    }
+
+    header{
+      background-image: url(../public/header.jpg);
+       background-size: cover;
+      background-position: center;
+      height: 80vh;
+      margin: 0; 
+      }
+      
+      #wowslider{
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      
+      }
+      
+      #wowslider button{
+      background-color:#D1487B;
+      color: #ffffff;
+      padding: 1.6rem 1.5rem 1.6rem 1.5rem;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      border-style: none;
+      }
+      
+      .bar h2{
+      background-color: #D1487B;
+      color: #ffffff;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      }
+      
+      .icons-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .icon-items{
+        padding-left: 2.0rem;
+        padding-right: 2.0rem;
+        }
+        
+          
+  .review-container{
+    display: flex;
+    justify-content: center;
+    background-color: #D2D2CF;
+    
+    }
+    
+    .review-container div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 1.5rem 1.5rem 1.5rem;
+    }
+
+.review-container div img:hover{
+  cursor: pointer;
+  transition-duration: 1.2ms;
 }
+
+    hr{
+    color: #000;
+    height: 5px;
+    
+    }
+    
+    .review-head{
+    color: #104d06;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    }
+    
+    #leave-comment{
+    margin-right:60px;
+    padding: 1.0rem 2.2rem 1.0rem 2.2rem;
+    float: right;
+    border-radius:0px 20px 0px 0px;
+    border-color: #666666;
+    background-color: #58BA46;
+    color: #ffffff;
+    font-size: 20px;
+    border-width: 3px;
+    /* margin-top: 30px; */
+    }
+
+    #leave-comment:hover{
+      background-color: #666666;
+      transition-duration: 1.2ms;
+      }
+
+      #health-container{
+        background-image: url(../public/health-back.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        margin: 0; 
+        }
+        
+        .health-section{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        }
+        
+        .left-section{
+        text-align: center;
+        color: #58BA46;
+        padding-top: 150px;
+        font-weight: 600;
+        font-size: 17px;
+        }
+        
+        .left-section h2{
+        color: #fff;
+        }
+        
+        .right-section{
+        padding-top:80px ;
+        }
+
+        .review-bottom{
+          display: flex;
+          padding-top: 40px;
+          justify-content: space-between;
+        }
+
+        .review-bottom h2{
+          margin-left: 50px;
+          color: #cf5898;
+        }
+
+        #footer{
+          background-color: #58BA46;
+          color: #000;
+          padding: 20px;
+          font-size: 14px;
+          text-align: center;
+        }
+
+        #contact-us{
+          padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+          margin-top: 20px;
+          background-color: #D1487B;
+          border-style: none;
+          font-size: 1.9rem;
+          color: #ffffff;
+          border-radius: 10px;
+        }
+
+        #contact-us:hover{
+          background-color: #666666;
+          transition-duration: 1.2ms;
+        }
+
+        #doglist-header{
+          background-image: url(../public/german.jpg);
+          background-size: cover;
+      background-position: center;
+      opacity: inherit;
+      height: 70vh;
+      margin: 0; 
+      text-align: center;
+      color: #fff;
+      padding-top: 200px;
+      font-size: x-large;
+      text-decoration: solid;
+    
+        }
+
+.doglist-container{
+  padding-top: 30px;
+}
+
+        #doglist-header div{
+float: right;
+padding-right: 30px;
+color: #fff;
+        }
+
+        .doglist-container h3{
+          text-align: center;
+          font-weight: 900;
+          color: #58BA46;
+          
+        }
+
+        #heading{
+          background-color: #000;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        #dogsale-btn{
+          font-size: 2.3rem;
+          text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+
+        }
+.dogcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-wrap: wrap;
+}
+ #dogcard{
+  text-align: center;
+  width: 20%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.8rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #b7b7b7;
+  margin: 7px;
+        }
+     #dogcard:hover {
+          -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+          opacity: 0.8;
+          -webkit-transition: opacity 800ms ease-in-out 0s;
+          transition: opacity 800ms ease-in-out 0s;
+          -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+          transition: -webkit-transform 1s ease-in-out 0s;
+          transition: transform 1s ease-in-out 0s;
+          transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+        }
+
+        #dogcard img {
+          width: 100%;
+          height: auto;
+        }
+
+        #dogsale-btn button{
+          background-color: #D1487B;
+          color: #fff;
+          padding: 1.5rem 3.0rem 1.5rem 3.0rem;
+        }
+
+        #sell-btn{
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        
+        }
+
+        #sell-btn button{
+          padding: 1.5rem 4.5rem 1.5rem 4.5rem;
+          color: #fff;
+          background-color:#104d06;
+          font-size: 1.8rem;
+        }
+
+        #delete-icon{
+          float: right;
+          margin-bottom: 5px;
+        }
