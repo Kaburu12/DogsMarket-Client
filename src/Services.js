@@ -4,7 +4,13 @@ const Services = () => {
   
   return (
     <div>
-      <header id="services-header"></header>
+      <header id="services-header">
+        <div className="header-text">
+        <h2>Get In Touch With Us</h2>
+        <h3>We Offer Best Dog Services In Town</h3>
+        </div>
+        <h1> ⤋</h1>
+      </header>
       <div className="services-container">
         <div>
           <img id="services" src="https://assets.petbacker.com/user-images/320/u_d2536a26b9.5f7ed737da344.jpg" alt="services" />
@@ -39,6 +45,13 @@ const Services = () => {
       <div className="services-btn">
       <button>Click To Book A Slot</button>
       </div>
+      <section>
+  <footer id="footer">
+          <p>infor@dogsmarket.co.ke</p>
+          <p>Designed by : Michael Kaburu</p>
+          <p>contact : +254796225100</p>
+</footer>
+</section>
 	    </div>
 	 );
 }
