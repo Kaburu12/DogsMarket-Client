@@ -3,7 +3,7 @@ import React,{ useState} from "react";
 import Dog from "./Dog"
 import DogForm from "./DogForm";
 
-const DogList = ({ dogBreeds, onDeleteDog, onAddDog ,onUpdateDog}) => {
+const DogList = ({ dogBreeds, onDeleteDog, onAddDog}) => {
 
   const [ showForm, setShowForm ] = useState(false)
 
@@ -16,7 +16,6 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog ,onUpdateDog}) => {
         image={dog.image}
         price={dog.price}
         onDeleteDog={onDeleteDog}
-        onUpdateDog={onUpdateDog}
       />
     );
   });

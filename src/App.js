@@ -8,28 +8,32 @@ import Home from "./Home";
 import Services from "./Services";
 
 function App() {
-  const [dogs, setDogs] = useState([]);
+  const [ dogs, setDogs ] = useState([]);
+  const [ bookings, setBookings ] = useState([]);
 
     //fectching dogs to be displayed
-    // https://server-app123.herokuapp.com/products
+  
     useEffect(() => {
       fetch("http://localhost:9292/dogs")
         .then((res) => res.json())
         .then((dogs) => setDogs(dogs));
     }, []);
   
-   // add this callback function to update dogs
- function handleUpdateDog(updatedDog) {
-  const updatedDogs = dogs.map((dog) => {
-    if (dog.id === updatedDog.id) {
-      return updatedDog;
-    } else {
-      return dog;
-    }
-  });
-  setDogs(updatedDogs);
- }
+  //fectching bookigs
+  useEffect(() => {
+    fetch("http://localhost:9292/bookings")
+      .then((res) => res.json())
+      .then((bookings) => setBookings(bookings));
+  }, []);
   
+
+     //a function meant to update bookings state on adding new dogs
+     function handleAddBooking(newBooking) {
+      setBookings([ ...bookings, newBooking ]);
+    
+    }
+  
+  //function to delete dogs
     function handleDeleteDog(deleteDog) {
       const updatedDogs = dogs.filter((dog) => dog.id !== deleteDog.id);
     setDogs(updatedDogs);
@@ -40,23 +44,24 @@ function App() {
   function handleAddDog(newDog) {
     setDogs([ ...dogs, newDog ]);
     
-
-    
-  }
+ 
   
-
+  }
   return (
     <div>
     <NavBar />
     <Routes>
-        <Route path="/doglist" element={<DogList onAddDog={handleAddDog}
+        <Route path="/doglist" element={<DogList
+          onAddDog={handleAddDog}
           dogBreeds={dogs}
           onDeleteDog={handleDeleteDog}
-          onUpdateDog={handleUpdateDog}
         />} />
       <Route path="/doglist" element={<DogList />}/>
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services/>} />
+        <Route path="/services" element={<Services
+            onAddBooking={handleAddBooking}
+            bookings={bookings}
+        />} />
       <Route path="/" element={<Home />} />
     </Routes>
     </div>

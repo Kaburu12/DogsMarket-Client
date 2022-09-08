@@ -1,6 +1,14 @@
-import React from "react";
+import React,{ useState} from "react";
+import BookingList from "./BookingList";
 
-const Services = () => {
+const Services = ({ onAddBooking, bookings }) => {
+  const [ showList, setShowList ] = useState(false)
+
+    // a fucntion to hide/show booking-list
+    function handleShowBookingList() {
+      setShowList((showList) => !showList)
+    }
+    
   
   return (
     <div>
@@ -43,7 +51,9 @@ const Services = () => {
         </div>
       </div>
       <div className="services-btn">
-      <button>Click To Book A Slot</button>
+      <div id="book-btn"><button onClick={handleShowBookingList}> Click To Book Now</button>
+					  {showList === true ? <BookingList onAddBooking={onAddBooking} bookings={bookings} /> : null}
+          </div> 
       </div>
       <section>
   <footer id="footer">

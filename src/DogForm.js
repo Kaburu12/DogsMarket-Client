@@ -34,10 +34,9 @@ const DogForm = ({ onAddDog }) => {
   return (
     <div>
       <div id="form-header">
-        Enter Your Correct Information To Make an Order
       </div>
       <div id="form-container">
-        <form className="orderform" onSubmit={handleSubmit}>
+        <form className="dogform" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="image"
