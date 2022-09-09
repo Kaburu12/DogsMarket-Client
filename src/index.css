@@ -476,7 +476,7 @@ flex-wrap: wrap;
 
 #bookingcard{
 border-style: dotted;
-border-width: 1px;
+border-width: 2px;
 border-radius: 10px;
 margin:5px;
 padding:7px;
@@ -484,7 +484,8 @@ padding:7px;
 
 hr{
   align-self: center;
-  color: #000;
   height: 10px;
+  background-color: #000;
+  padding: 5px;
  
 }
