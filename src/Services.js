@@ -2,11 +2,13 @@ import React,{ useState} from "react";
 import BookingList from "./BookingList";
 
 const Services = ({ onAddBooking, bookings }) => {
-  const [ showList, setShowList ] = useState(false)
+  const [ showList, setShowList ] = useState(false);
+  const [ book, setBook ] = useState(false)
 
     // a fucntion to hide/show booking-list
     function handleShowBookingList() {
       setShowList((showList) => !showList)
+      setBook((book)=>!book)
     }
     
   
@@ -51,7 +53,7 @@ const Services = ({ onAddBooking, bookings }) => {
         </div>
       </div>
       <div className="services-btn">
-      <div id="book-btn"><button onClick={handleShowBookingList}> Click To Book Now</button>
+      <div id="book-btn1"><button onClick={handleShowBookingList}> {book=== false ?"Click To Book Now" : "🔙 Back"} </button>
 					  {showList === true ? <BookingList onAddBooking={onAddBooking} bookings={bookings} /> : null}
           </div> 
       </div>

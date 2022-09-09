@@ -4,18 +4,20 @@ import { useState } from "react";
 
 const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
   //constant values that hold the state values to be posted
-  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
   const [service, setService] = useState("");
-  const [place, setPlace] = useState("");
+  const [location, setLocation] = useState("");
+  
 
+	
 
   function handleSubmit(event) {
     event.preventDefault();
     //a constant that holds new booking data to be posted
     const bookingCard = {
-      name: name,
+      number: number,
       service: service,
-      place: place,
+      location: location,
     };
 
     //posting booking data using our fetch API
@@ -46,6 +48,8 @@ const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
 	//    .then((updatedBooking) => onUpdateBooking(updatedBooking));
 	//   }
 	
+	  
+	  
   }
   return (
     <div>
@@ -55,10 +59,10 @@ const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
 			  <form className="bookingform" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="name"
-		  name="name"
-		  value={name}
-			onChange={(e) => setName(e.target.value)} />
+            placeholder="no.of.dogs"
+		  name="no.of.dogs"
+		  value={number}
+			onChange={(e) => setNumber(e.target.value)} />
 			<input
 		  type="text"
 		  placeholder="service"
@@ -67,11 +71,12 @@ const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
 					  onChange={(e) => setService(e.target.value)} />		
 				<input
 		  type="text"
-		  placeholder="place"
-		  name="place"
-		  value={place}
-		 onChange={(e) => setPlace(e.target.value)} />	
-				  <button type="submit">Book</button>  
+		  placeholder="location"
+		  name="location"
+		  value={location}
+		 onChange={(e) => setLocation(e.target.value)} />	
+				  <button id="book-btn2" type="submit">Book
+				  </button>  
 				{/* <button id="update" onClick={handleUpdate}>Update</button> */}
 			</form>
 			</div>

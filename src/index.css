@@ -449,4 +449,42 @@ padding: 20px;
   border-radius: 15px;
   background-color: #D1487B;
   color: #fff;
+  text-align: center;
+}
+
+.bookings-container h3{
+text-align: center;
+background-color: #000;
+color: #fff;
+}
+
+#book-btn1{
+  text-align: center;
+}
+
+#book-btn2{
+  text-align: center;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+
+.bookingcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+}
+
+#bookingcard{
+border-style: dotted;
+border-width: 1px;
+border-radius: 10px;
+margin:5px;
+padding:7px;
+}
+
+hr{
+  align-self: center;
+  color: #000;
+  height: 10px;
+ 
 }

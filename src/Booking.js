@@ -1,16 +1,16 @@
 import React from "react";
 
 
-const Booking = ({name, place, service }) => {
+const Booking = ({number, location, service }) => {
 	
 
-
-	
   return (
 	  <div id="bookingcard">
-		  <h4>{ name}</h4>
-			  <h4>{ service}</h4>
-			  <h5>{ place}</h5>
+		  <h4>No.of dogs: {number}</h4>
+		  <hr />
+		  <h4>Service: {service}</h4>
+		  <hr />
+			 <h5>Location: { location}</h5>
 		  </div>
   );
 };
