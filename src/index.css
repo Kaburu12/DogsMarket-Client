@@ -77,7 +77,7 @@ body {
     }
 
     header{
-      background-image: url(../public/header.jpg);
+      background-image: url(./images/header.jpg);
        background-size: cover;
       background-position: center;
       height: 80vh;
@@ -169,7 +169,7 @@ body {
       }
 
       #health-container{
-        background-image: url(../public/health-back.jpg);
+        background-image: url(./images/health-back.jpg);
         background-size: cover;
         background-position: center;
         height: 80vh;
@@ -237,7 +237,7 @@ body {
         }
 
         #doglist-header{
-          background-image: url(../public/german.jpg);
+          background-image: url(./images/german.jpg);
           background-size: cover;
       background-position: center;
       opacity: inherit;
@@ -383,7 +383,7 @@ margin-bottom: 20px;
         }
 
 #services-header{
-  background-image: url(../public/services-header.jpg);
+  background-image: url(./images/services-header.jpg);
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -488,4 +488,14 @@ hr{
   background-color: #000;
   padding: 5px;
  
+}
+
+.dogform input{
+  margin: 1px;
+  border-style: double;
+}
+
+.bookingform input{
+  margin: 1px;
+  border-style: double;
 }

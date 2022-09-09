@@ -11,6 +11,19 @@ function App() {
   const [ dogs, setDogs ] = useState([]);
   const [ bookings, setBookings ] = useState([]);
 
+  // add this callback function to update items inchart
+  function handleUpdateBooking(updatedBooking) {
+    const updatedBookings = bookings.map((booking) => {
+      if (booking.id === updatedBooking.id) {
+        return updatedBooking;
+      } else {
+        return booking;
+      }
+    });
+    setBookings(updatedBookings);
+   }
+
+
     //fectching dogs to be displayed
   
     useEffect(() => {
@@ -44,7 +57,7 @@ function App() {
   function handleAddDog(newDog) {
     setDogs([ ...dogs, newDog ]);
     
- 
+
   
   }
   return (
@@ -55,12 +68,14 @@ function App() {
           onAddDog={handleAddDog}
           dogBreeds={dogs}
           onDeleteDog={handleDeleteDog}
+
         />} />
       <Route path="/doglist" element={<DogList />}/>
       <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services
             onAddBooking={handleAddBooking}
-            bookings={bookings}
+          bookings={bookings}
+          onUpdate={handleUpdateBooking}
         />} />
       <Route path="/" element={<Home />} />
     </Routes>

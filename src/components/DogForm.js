@@ -55,7 +55,7 @@ const DogForm = ({ onAddDog }) => {
 		  name="price"
 		  value={price}
 		 onChange={(e) => setPrice(e.target.value)} />	
-		  <button type="submit">Post</button>  
+		  <button id="post-btn" type="submit">Post</button>  
 			</form>
 			</div>
 	    </div>

@@ -3,7 +3,7 @@ import React,{ useState} from "react";
 import Booking from "./Booking"
 import BookingForm from "./BookingForm";
 
-const BookingList = ({ bookings, onAddBooking ,onUpdateBooking}) => {
+const BookingList = ({ bookings, onAddBooking}) => {
 
 	const [ showForm, setShowForm ] = useState(false);
 
@@ -15,7 +15,6 @@ const BookingList = ({ bookings, onAddBooking ,onUpdateBooking}) => {
         number={booking.number}
         service={booking.service}
 			location={booking.location}
-        onUpdateBooking={onUpdateBooking}
       />
     );
   });
@@ -42,16 +41,12 @@ const BookingList = ({ bookings, onAddBooking ,onUpdateBooking}) => {
 				  <div id="book-btn1"><button onClick={handleShowForm}> Book Now
 				  </button>
 					  {showForm === true ? <BookingForm onAddBooking={onAddBooking}
-						  onUpdateBooking={onUpdateBooking} /> : null}
+              
+            /> : null}
           </div> 
 
         </div>
       </main>
-      {/* <footer id="footer">
-          <p>infor@dogsmarket.co.ke</p>
-          <p>Designed by : Michael Kaburu</p>
-          <p>contact : +254796225100</p>
-</footer> */}
 		</div>
 	 );
 }

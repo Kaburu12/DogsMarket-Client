@@ -4,6 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
+
+  function handleContact() {
+  return alert(`#{Contact us on 📞 : 0796225100} \n #{email 📧: kabururm@gmail.com}`);
+}
+
   return (
     <div className="home">
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -96,7 +101,7 @@ const Home = () => {
     <p>At Dogs Market, we take our responsibilities regarding the health and well- <br /> being of your puppy very seriously. <br />
 All of our puppies visit a qualified, registered veterinarian prior to their delivery <br /> where they are health-checked, tested, given their first vaccination, de-wormed, <br /> treated to prevent parasites.  <br />
 No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br /> that you receive your puppy in perfect health.</p>
- <Link to="services"> <button  id="contact-us"> ➲ Contact Us</button></Link> 
+ <Link to="services"> <button onClick={handleContact} id="contact-us"> ➲ Contact Us</button></Link> 
 
   </div>
   <div className="right-section">
@@ -107,13 +112,11 @@ No other puppy provider/breeder in Kenya goes to the lengths we do to ensure <br
 
 <section>
   <footer id="footer">
-          <p>infor@dogsmarket.co.ke</p>
+          <p>📧 infor@dogsmarket.co.ke</p>
           <p>Designed by : Michael Kaburu</p>
           <p>contact : +254796225100</p>
 </footer>
 </section>
-  
-
     
 </div>
 	

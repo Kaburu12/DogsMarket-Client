@@ -2,14 +2,29 @@ import React from "react";
 import { useState } from "react";
 
 
-const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
+const BookingForm = ({ booking,onAddBooking ,onUpdateBooking}) => {
   //constant values that hold the state values to be posted
   const [number, setNumber] = useState("");
   const [service, setService] = useState("");
   const [location, setLocation] = useState("");
   
+  function handleUpdate() {
+	// Call onUpdateBooking, passing the data returned from the fetch request
+	fetch(`http://localhost:9292/bookings/${booking.id}`, {
+	 method: "PATCH",
+	 headers: {
+	   "Content-Type": "application/json",
+	 },
+	 body: JSON.stringify({
+		 number: number,
+		 service:service,
+		 location: location,
+	 }),
+   })
+   .then((r) => r.json())
+   .then((updatedBooking) => onUpdateBooking(updatedBooking));
+  }
 
-	
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -31,25 +46,7 @@ const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
       .then((newBooking) => onAddBooking(newBooking));
     
     
-	//   function handleUpdate() {
-	// 	// Call onUpdateBooking, passing the data returned from the fetch request
-	// 	fetch(`http://localhost:9292/bookings/${booking.id}`, {
-	// 	 method: "PATCH",
-	// 	 headers: {
-	// 	   "Content-Type": "application/json",
-	// 	 },
-	// 	 body: JSON.stringify({
-	// 		 name: name,
-	// 		 service:service,
-	// 		 place: place,
-	// 	 }),
-	//    })
-	//    .then((r) => r.json())
-	//    .then((updatedBooking) => onUpdateBooking(updatedBooking));
-	//   }
-	
-	  
-	  
+
   }
   return (
     <div>
@@ -75,9 +72,9 @@ const BookingForm = ({ onAddBooking ,onUpdateBooking}) => {
 		  name="location"
 		  value={location}
 		 onChange={(e) => setLocation(e.target.value)} />	
-				  <button id="book-btn2" type="submit">Book
+				  <button onClick={handleUpdate} id="book-btn2" type="submit">Book
 				  </button>  
-				{/* <button id="update" onClick={handleUpdate}>Update</button> */}
+				{/* <button id="update" type="submit" onClick={handleUpdate}>Update</button> */}
 			</form>
 			</div>
 	    </div>
