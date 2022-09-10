@@ -251,6 +251,11 @@ body {
     
         }
 
+   .dogsale-headline h4{
+    text-align: center;
+    font-weight: 600;
+   }     
+
 .doglist-container{
   padding-top: 30px;
 }
@@ -375,7 +380,35 @@ margin-bottom: 20px;
           color: #fff;
           background-color:#104d06;
           font-size: 1.8rem;
+          border-radius: 0.5rem;
         }
+
+        #sell-btn button:hover{
+          background-color: #0c0c0c;
+          color: #fff;
+        }
+
+.buy-sell-btns{
+  display: flex;
+  justify-content: center;
+}
+
+#buy-btn{
+margin-top: 30px;
+margin-left:50px ;
+}
+
+#buy-btn button{
+  background-color: #D1487B;
+  color: #fff;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+
+#buy-btn button:hover{
+  background-color: #666666;
+}
 
         #delete-icon{
           float: right;

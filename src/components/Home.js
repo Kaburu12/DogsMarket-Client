@@ -7,7 +7,7 @@ const Home = () => {
 
   //pop-ups functions
   function handleContact() {
-  return alert(`#{Contact us on 📞 : 0796225100} \n #{email 📧: kabururm@gmail.com}`);
+  return alert(`${"Contact us on 📞 : 0796225100"} \n\n ${"email 📧: kabururm@gmail.com"}`);
   }
   
   function handlePopUp() {
@@ -61,7 +61,7 @@ const Home = () => {
 </section> 
 
 <section id="reviews">
-        <p className="review-head">Site Reviews & posts</p>
+        <p className="review-head">Our App Connects You To Top Dog Sellers & Dog Service Providers</p>
         <div className="review-container">
           <div>
             <img style={{ width: "40%", height: "50%",borderRadius: "100%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgzOoeWAe9w4YTYMye3LNwVWU2QVptuu07w&usqp=CAU" alt="profile" />
@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
         <div className="review-bottom">
-          <h2>We Find Best Suitable Dog For Your Home</h2>
+          <h2>Find Best Suitable Dog For Your Home</h2>
         <button onClick={handlePopUp} id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
         </div>
        

@@ -6,7 +6,10 @@ import DogForm from "./DogForm";
 const DogList = ({ dogBreeds, onDeleteDog, onAddDog}) => {
 
   const [ showForm, setShowForm ] = useState(false)
-
+//contact pop up
+  function handlePopUp() {
+    return alert(`${"Call us on : 0796225100"}\n\n ${"Email: infor@dogsmarket.co.ke"}`)
+  }
   const productsArray = dogBreeds.map((dog) => {
     return (
       <Dog
@@ -38,13 +41,16 @@ const DogList = ({ dogBreeds, onDeleteDog, onAddDog}) => {
       <main>
         <div className="dogcards-container">
           <div id="dogsale-btn"><button>Dogs For Sale</button> </div> 
+          <div className="dogsale-headline"><h4>Dog Sellers Are Only Allowed To Post And Reach Out To Support Team To Give Out Their Contact Information</h4></div>
           <div className="dogcards">
           {productsArray}
           </div>
+          <div className="buy-sell-btns">
           <div id="sell-btn"><button onClick={handleShowForm}> Click To Sell Your Dog</button>
           {showForm=== true ?  <DogForm onAddDog={onAddDog} />  : null}
           </div> 
-
+          <div id="buy-btn"><button onClick={handlePopUp}> Request To Buy</button></div>
+          </div>
         </div>
       </main>
       <footer id="footer">
