@@ -5,9 +5,14 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 
+  //pop-ups functions
   function handleContact() {
   return alert(`#{Contact us on 📞 : 0796225100} \n #{email 📧: kabururm@gmail.com}`);
-}
+  }
+  
+  function handlePopUp() {
+    return alert("not available at the moment");
+  }
 
   return (
     <div className="home">
@@ -89,7 +94,7 @@ const Home = () => {
         </div>
         <div className="review-bottom">
           <h2>We Find Best Suitable Dog For Your Home</h2>
-        <button id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
+        <button onClick={handlePopUp} id="leave-comment"> <FontAwesomeIcon icon={faEnvelope} />  Leave a review</button>
         </div>
        
       </section>
