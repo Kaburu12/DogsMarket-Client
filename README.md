@@ -30,7 +30,7 @@ https://github.com/Kaburu12/DogsMarket-server.git
 
 
 ## Top Page Screenshot
-![image]()
+![image](./src/images/dogsMarket.png)
 
 ## Technology-Used
 HTML - Was used as a template to hold the React components of the app via the root div. 
