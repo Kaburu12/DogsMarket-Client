@@ -27,14 +27,14 @@ function App() {
     //fectching dogs to be displayed
   
     useEffect(() => {
-      fetch("http://localhost:9292/dogs")
+      fetch("https://dogsmarket1234.herokuapp.com/dogs")
         .then((res) => res.json())
         .then((dogs) => setDogs(dogs));
     }, []);
   
   //fectching bookigs
   useEffect(() => {
-    fetch("http://localhost:9292/bookings")
+    fetch("https://dogsmarket1234.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((bookings) => setBookings(bookings));
   }, []);

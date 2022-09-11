@@ -27,9 +27,11 @@ https://github.com/Kaburu12/DogsMarket-Client.git
 https://github.com/Kaburu12/DogsMarket-server.git
 
 ## Backend-End-Poits-Links
+https://dogsmarket1234.herokuapp.com/dogs
 
+https://dogsmarket1234.herokuapp.com/bookings
 
-## Top Page Screenshot
+## Home Page Screenshot
 ![image](./src/images/dogsMarket.png)
 
 ## Technology-Used

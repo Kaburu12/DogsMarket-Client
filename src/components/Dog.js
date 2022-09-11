@@ -4,7 +4,7 @@ import React from "react";
 const Dog = ({ dog, breed, image, price ,onDeleteDog}) => {
 	
 	function handleDeleteClick() {
-		fetch(`http://localhost:9292/dogs/${dog.id}`, {
+		fetch(`https://dogsmarket1234.herokuapp.com/dogs/${dog.id}`, {
 		  method: "DELETE",
 		})
 		.then((r) => r.json())

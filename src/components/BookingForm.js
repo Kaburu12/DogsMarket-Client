@@ -10,7 +10,7 @@ const BookingForm = ({ booking,onAddBooking ,onUpdateBooking}) => {
   
   function handleUpdate() {
 	// Call onUpdateBooking, passing the data returned from the fetch request
-	fetch(`http://localhost:9292/bookings/${booking.id}`, {
+	fetch(`https://dogsmarket1234.herokuapp.com/bookings/${booking.id}`, {
 	 method: "PATCH",
 	 headers: {
 	   "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const BookingForm = ({ booking,onAddBooking ,onUpdateBooking}) => {
     };
 
     //posting booking data using our fetch API
-    fetch("http://localhost:9292/bookings", {
+    fetch("https://dogsmarket1234.herokuapp.com/bookings", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bookingCard),

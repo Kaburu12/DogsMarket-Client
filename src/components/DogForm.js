@@ -19,7 +19,7 @@ const DogForm = ({ onAddDog }) => {
     };
 
     //posting dog data using our fetch API
-    fetch("http://localhost:9292/dogs", {
+    fetch("https://dogsmarket1234.herokuapp.com/dogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dogCard),
