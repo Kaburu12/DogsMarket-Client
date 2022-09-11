@@ -17,8 +17,9 @@ The app uses ,HTML,CSS ,JAVA SCRIPT,REACT.JS language for front-end and Ruby lan
 3)install the app dependancies by running `npm install`.
 4)After the node-modules packages and other dependancies have been installed run `npm start` or `npm run start` to run the app.
 
-## Project's-Live-Link
-https://dogsmarket-ke.netlify.app/
+## Project's-Video-Link
+https://drive.google.com/file/d/1ZyhHllErEcGhgKNMblNnU4AnibJNaT8X/view
+
 
 ## GitHub-Front-End-Repo-Link
 https://github.com/Kaburu12/DogsMarket-Client.git
@@ -31,8 +32,8 @@ https://dogsmarket1234.herokuapp.com/dogs
 
 https://dogsmarket1234.herokuapp.com/
 
-## Project's-Video-Link
-https://drive.google.com/file/d/1ZyhHllErEcGhgKNMblNnU4AnibJNaT8X/view
+## Project's-Live-Link
+https://dogsmarket-ke.netlify.app/
 
 ## Home Page Screenshot
 ![image](./src/images/dogsMarket.png)
